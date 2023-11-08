@@ -5,6 +5,7 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -19,6 +20,10 @@ h6 {
 
 a {
   text-decoration: none;
+}
+
+p{
+  margin: 0;
 }
 
 .container {
@@ -56,6 +61,10 @@ a {
 .header {
 }
 .header-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-logo {
@@ -72,6 +81,7 @@ a {
 .header-logo-image {
 }
 .header-menu-list {
+  display: none;
 }
 .list {
 }
@@ -90,12 +100,14 @@ a {
   color: #fd9222;
 }
 .header-soc-list {
+  display: none;
 }
 .header-soc-item {
 }
 .header-soc-link {
 }
 .hero {
+  padding-bottom: 80px;
 }
 
 .hero-container {
@@ -120,6 +132,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   row-gap: 40px;
+  column-gap: 12px;
 }
 
 .hero-btn {
@@ -183,12 +196,29 @@ a {
   color: #fd9222;
 }
 
+
+
 .features {
   background-color: #1e1823;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.visually-hidden {
+.features-icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 22px;
 }
+
+.features-icon{
+  fill: #fd9222;
+}
+
 .features-list {
 }
 .features-item {
@@ -205,6 +235,12 @@ a {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  margin-top: 18px;
+}
+
+.features-item-text:not(:last-child){
+  margin-bottom: 36px;
+
 }
 
 .taste {
